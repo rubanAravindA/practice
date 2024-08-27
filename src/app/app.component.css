@@ -1,0 +1,71 @@
+.p-organizationchart {
+    .p-organizationchart-line-top{
+        border-top: 3px solid #fff !important;
+        border-color: #fff !important;
+    }
+
+    .p-organizationchart-line-down{
+        width: 3px !important;
+        background-color: #fff !important;
+    }
+
+    .p-organizationchart-line-left {
+        border-right: 3px solid #fff !important;
+        border-color: #fff !important;
+    }
+}
+
+.Lineage-node {
+    width: 7rem;
+    height: 20rem;
+    background-color: #ffe600;
+    color: black;
+}
+
+/* .Lineage-node:hover{
+    transform: scale(1.1);
+} */
+
+.card{
+    transform: rotate(90deg);
+    height: 7rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    .card-body{
+        width: 15rem;
+        font-size: x-large;
+        font-weight: bold;
+        align-content: center;
+        line-height: 1.1;
+        padding: 0;
+    }
+    .card-footer{
+        width: 15rem;
+        font-size: medium;
+        padding: 0;
+        .bg-1{
+            background-color: #750e5c !important;
+        }
+        .bg-2{
+            background-color: #3d108a !important;
+        }
+        .bg-3{
+            background-color: #1777cf !important;
+        }
+    }
+}
+
+.node-shadow {
+    box-shadow: inset 0 0 1em #000000, -8px 8px 16px rgba(0, 0, 0, 1) !important;
+}
+
+.p-node-toggler{
+    background-color: #ffe600;
+    border-radius: 50%;
+    clip-path: inset(50% 0 0 0);
+}
+
+.p-organizationchart .p-organizationchart-node-content {
+    padding: 1.25rem;
+}

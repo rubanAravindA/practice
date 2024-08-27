@@ -1,0 +1,29 @@
+<div style="height: 100%;" class="container-fluid background-dark p-3">
+    <div class="row">
+        <div class="col" style="position: relative; min-height: 90vh;">
+            <div class="m-2 bg-dark" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: auto;">
+                <pan-zoom [config]="panZoomConfig" >
+                    <div style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <div style="transform: rotate(-90deg);">
+                            <p-organizationChart [value]="tree" [preserveSpace]="false">
+                                <ng-template let-node pTemplate="person">
+                                    <div class="card">
+                                        <div class="card-body" [matTooltip]="node.data.type" matTooltipPosition="above" [matTooltipDisabled]="!node.data.type">{{node.label}}</div>
+                                        <div class="card-footer" *ngIf="node.data.c">
+                                            <a class="badge rounded-pill bg-success" matTooltip="Code Repository" [href]="node.data.c" target="_blank">C</a>
+                                            <a class="badge rounded-pill bg-1 m-1 btn" matTooltip="Notebook Used" [href]="node.data.n" target="_blank">N</a>
+                                            <a class="badge rounded-pill bg-2 m-1 btn" matTooltip="Unit Test" [href]="node.data.u" target="_blank">U</a>
+                                             <!-- <span >C</span>
+                                            <span [routerLink]="'/home/issueDetails/'+node.label" >n</span>
+                                            <span [routerLink]="'/dataObservability/pipeline/'+node.label" >u</span> -->
+                                        </div>
+                                    </div>
+                                </ng-template>
+                            </p-organizationChart>
+                        </div>
+                    </div>
+                </pan-zoom>
+            </div>
+        </div>
+    </div>
+</div>

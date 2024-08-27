@@ -1,0 +1,74 @@
+[
+	{
+		"name": "policy",
+		"type": "Domain",
+		"notebook_used": "https://link/policy.py",
+		"unittest": "https://link/policy.py",
+		"coderepository": "https://link/policy.py",
+		"child": [
+			{
+				"name": "x",
+				"type": "Source Systems",
+				"child": [
+					{
+						"name": "x3",
+						"type": "Source Tables/Views",
+						"child": []
+					},
+					{
+						"name": "x4",
+						"type": "Source Tables/Views",
+						"child": []
+					}
+				]
+			},
+			{
+				"name": "y",
+				"type": "Source Systems",
+				"child": [
+					{
+						"name": "y1",
+						"type": "Source Tables/Views",
+						"child": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "policy rate",
+		"type": "Domain",
+		"notebook_used": "https://link/policy.py",
+		"unittest": "https://link/policy.py",
+		"coderepository": "https://link/policy.py",
+		"child": [
+			{
+				"name": "x",
+				"type": "Source Systems",
+				"child": [
+					{
+						"name": "x1",
+						"type": "Source Tables/Views",
+						"child": []
+					},
+					{
+						"name": "x2",
+						"type": "Source Tables/Views",
+						"child": []
+					}
+				]
+			},
+			{
+				"name": "z",
+				"type": "Source Systems",
+				"child": [
+					{
+						"name": "z1",
+						"type": "Source Tables/Views",
+						"child": []
+					}
+				]
+			}
+		]
+	}
+]

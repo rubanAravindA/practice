@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialExampleModule } from './material.module';
+import { NgxPanZoomModule } from 'ngx-panzoom';
+import { OrganizationChartModule } from 'primeng/organizationchart';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { MaterialExampleModule } from './material.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialExampleModule
+    HttpClientModule,
+    MaterialExampleModule,
+    NgxPanZoomModule,
+    OrganizationChartModule
   ],
   providers: [
     provideClientHydration(),
